@@ -1,0 +1,17 @@
+<template>
+    <require from="./result-view.scss"></require>
+    <div class="container__result">
+      <h2>Result:</h2>
+      <div class="result">
+        <span><strong>${translation.word}</strong></span>
+        <span><strong>${translation.frequency}</strong></span>
+        <span><strong>${translation.similars}</strong></span>
+        <template repeat.for="res of noteEntry.result">
+          <span>${res.word}</span>
+          <span>${res.frequency}</span>
+          <span>${res.similarWords.join(' ')}</span>
+        </template>
+      </div>
+    </div>
+  </template>
+  
