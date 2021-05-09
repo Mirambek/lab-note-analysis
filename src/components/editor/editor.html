@@ -1,0 +1,22 @@
+<template>
+    <require from="./editor.scss"></require>
+    <div class="group">
+      <label>${translation.noteEntry}</label>
+      <textarea cols="30" rows="10" class="group__input" value.bind="noteEntry.text"></textarea>
+    </div>
+    <div class="group"></div>
+    <div class="group">
+      <label for="search">${translation.search}</label>
+      <input
+        type="tel"
+        id="search"
+        placeholder="Enter word to analyze"
+        class="group__input"
+        value.bind="noteEntry.searchText"
+      />
+    </div>
+    <div class="group">
+      <button class="group__button--search" click.delegate="analyzeWord()">${translation.analyze}</button>
+    </div>
+  </template>
+  

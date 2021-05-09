@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+  }
+  .container {
+    display: grid;
+    grid-template-areas: "left right";
+    justify-items: stretch;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    @media (max-width: 1100px) {
+      grid-template-areas:
+        "left"
+        "right";
+        grid-template-columns: 1fr;
+        max-width: 800px;
+    }
+    
+    margin: 0 auto;
+    width: 80wh;
+    .container__right {
+      grid-area: right;
+    }
+    .container__left {
+      grid-area: left;
+      padding: 10px;
+    }
+  }
+  

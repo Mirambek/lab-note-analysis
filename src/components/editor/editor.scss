@@ -1,0 +1,24 @@
+.group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+    label {
+      padding: 8px;
+      font-weight: 300;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      flex: 1 0 150px;
+      max-width: 200px;
+    }
+    .group__input {
+      flex: 1;
+    }
+    &:last-child {
+      justify-content: center;
+    }
+    .group__button--search {
+      padding: 8px 16px;
+    }
+  }
+  
