@@ -14,6 +14,7 @@ test\unit\services contains test cases. Services test cases are only covered due
 ## Future work
 I would like to write more test cases on UI part. UI should be changed based on UX design. As Levenstein distance 1 is required, similarity analysis can be optimized to O(n) by comparing with single loop firstWord[i] === secondWord[i] and adding some conditions for deletion or insertion.
 ## Run dev app
+Run  `npm i`
 
 Run `npm start`, then open `http://localhost:8080`
 
