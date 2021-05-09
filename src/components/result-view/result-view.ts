@@ -6,12 +6,12 @@ import { pluck } from "rxjs/operators";
     selector:  (store) => store.state.pipe(pluck('noteEntry'))
   })
 export class ResultView{
-    translation: { word: string; frequency: string; similars: string; result: string; };
+    translation: { word: string; frequency: string; similar: string; result: string; };
     constructor(){
         this.translation = {
             word:'Word',
             frequency:'Frequency',
-            similars:'Similars',
+            similar:'List of similar',
             result:'Result'
         }
     }
