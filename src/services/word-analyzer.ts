@@ -13,7 +13,7 @@ export class WordAnalyzer {
       frequency: 0,
       similarWords: new Array<String>(),
     };
-    for (let val of content.split(" ")) {
+    for (let val of content?.replace(/(\r?\n|\r\n?)/g,' ').split(" ")) {
       const word = val.trim();
       const distance: number = this.wordSimilar.calculateDistance(xWord, word);
       if (distance === 0) {
