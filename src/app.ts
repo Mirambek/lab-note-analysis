@@ -1,3 +1,7 @@
+import { registerActions } from "shared/store/actions";
+
 export class App {
-  public message = 'Hello World!';
+  constructor(){
+    registerActions()
+  }
 }
